@@ -1,0 +1,46 @@
+(function($){
+	$.fn.imgShow = function(o){
+		var o = $.extend({
+			showPanel:'animate',
+			timeShow: 3000,
+			speedShow: 1000,
+			speedHide: 1000,
+			speedShowDesc: 500,
+			speedHideDesc: 100
+		}, o);
+		return $(this).each(function(){
+				var folder = $(this);
+				var images = folder.find('img');
+				var imgCount = images.length;
+					images.hide().each(function(i){
+					$(this).attr('id','i_' + i);
+					$(this).css('position','absolute');
+			});
+			var first = images.filter('#i_0');
+			first.show();
+			$(".main_big").hide();
+			$(".slog_main").hide();
+			$(".anons_main").hide();
+			folder.width(first.width()).height(first.height());
+			
+			var id;
+			function ImgList() {
+				id = id || 0;
+				var currImg = images.filter('#i_' + id);
+				currImg.fadeOut(o.speedHide);
+					id ++;
+					if (id == imgCount) id = 0;
+					currImg = images.filter('#i_' + id);
+					$(".main_big").hide();
+					$(".slog_main").hide();
+					$(".anons_main").hide();
+				$("#l_"+id).show();
+				$("#s_"+id).show();
+				$("#a_"+id).show();
+				currImg.fadeIn(o.speedShow);
+			}
+			setInterval(ImgList,o.timeShow);
+			;
+		});
+	}
+})(jQuery)

@@ -1,0 +1,21 @@
+body{font-family: Arial; font-size: 14px; outline: none; padding: 0; margin: 0;}
+#header{height: 48px; background: url(/images/top_vs.png) repeat-x; text-align: center; text-shadow: 1px 1px #000000; font-size:22px; padding-top: 20px; clear: both; color: #fff;}
+#form{padding: 7px;}
+#form p{padding: 0px; margin: 0px;}
+#form td{padding: 1px;}
+td input[type="text"]{background: url(/images/edit.png) no-repeat; width: 303px; height: 20px; border:0; padding: 10px; outline: none;}
+td input[type="text"]:focus{background-position: 0 -40px;}
+.inputtext{background: url(/images/edit.png) no-repeat; width: 303px; height: 20px; border:0; padding: 10px; outline: none;}
+#form table{width: 100%;}
+.inputtext:focus{background-position: 0 -40px;}
+.captha .inputtext{background: url(/images/edit_sm.png) no-repeat; width: 164px; height: 20px; border:0; padding: 10px; margin-left: 10px; outline: none;}
+.captha .inputtext:focus{background-position: 0 -40px;}
+.inputtextarea{background: url(/images/tar.png) no-repeat; width: 303px; height: 145px; border:0; padding: 10px; resize:none; outline: none;}
+.inputtextarea:focus{background-position: 0 -165px; width: 303px; height: 145px; resize:none;}
+.need{padding-left: 3px; border-left: 1px solid red; display: block; margin-top: 7px;}
+.needa{padding-left: 3px; border-left: 1px solid red; display: block; margin-top: 7px;  color: #AE0D11; font-size: 12px; font-style: italic;}
+.sbtn input[type="submit"]{background: url(/images/sbtn.png) no-repeat; width: 184px; height: 40px; border: 0px;}
+.sbtn input[type="submit"]:hover{background-position: 0 -40px;}
+.errortext{color: red; font-style: italic;}
+.notetext{font-style: italic; color: green; font-weight: bold;}
+img.calendar-icon{float:left; display: inline-table; margin-top: 10px !important;}
